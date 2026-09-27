@@ -39,6 +39,7 @@
         <li>Time-series change-point detection</li>
         <li>LLM hallucination detection</li>
         <li>Scam &amp; phishing site analysis</li>
+        <li>Phishing URL classification</li>
         <li>Computer vision for autonomous driving</li>
         <li>Web platforms for research</li>
       </ul>
@@ -63,30 +64,50 @@
         </div>
         <div class="entry-org">ASU Science and Engineering Experience (SCENE) · Arizona State University</div>
         <p>Selected through a competitive application to do machine learning research in ASU labs under faculty mentorship. Three projects:</p>
+      </div>
 
-        <div class="subprojects">
+      <div class="sub-timeline">
+        <div class="sub-entry">
           <div class="card subproject">
-            <span class="kind">Web platform</span>
+            <span class="kind">SCENE · Web platform</span>
             <h3>CausalBench frontend</h3>
             <p>Built the frontend of CausalBench, an open platform for benchmarking causal-learning datasets, models, and metrics.</p>
             <div class="tag-row"><span class="tag">Frontend</span><span class="tag">Web development</span></div>
             <div class="link-row"><a href="https://causalbench.org/home" target="_blank" rel="noopener">causalbench.org ↗</a></div>
           </div>
+        </div>
+        <div class="sub-entry">
           <div class="card subproject">
-            <span class="kind">Time series</span>
+            <span class="kind">SCENE · Time series</span>
             <h3>SAX change-point detection</h3>
             <p>Finds structural shifts in multivariate time series using Symbolic Aggregate Approximation. Tested on air-quality and HVAC sensor data.</p>
             <div class="tag-row"><span class="tag">Python</span><span class="tag">NumPy</span><span class="tag">SAX</span></div>
             <div class="link-row"><a href="https://github.com/kanav-agarwal/SAX-change-points" target="_blank" rel="noopener">Code on GitHub ↗</a></div>
           </div>
+        </div>
+        <div class="sub-entry">
           <div class="card subproject">
-            <span class="kind">LLMs</span>
+            <span class="kind">SCENE · LLMs</span>
             <h3>LLM hallucination detection</h3>
             <p>Flags hallucinations by tracking shifts in a model's token-probability distributions during generation. Evaluated on SQuAD v2 and self-generated prompts.</p>
             <div class="tag-row"><span class="tag">Python</span><span class="tag">NLP</span></div>
             <div class="link-row"><a href="https://github.com/kanav-agarwal/CPD_hallucination_detection" target="_blank" rel="noopener">Code on GitHub ↗</a></div>
           </div>
         </div>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="card">
+        <div class="entry-head">
+          <h2>Independent Researcher</h2>
+          <span class="entry-when">2025 – 2026 · Senior year</span>
+        </div>
+        <div class="entry-org">AP Research (AP Capstone) · University High School</div>
+        <h3>Enhancing Phishing Website Detection with Machine Learning</h3>
+        <p>Studied how the size of the training set affects machine learning classifiers that detect phishing URLs. Converted about 450,000 labeled URLs from the Mendeley dataset into BERT embeddings, then trained logistic regression models on samples ranging from 1,000 URLs to the full dataset, with five random seeds per size.</p>
+        <p>F1 rose from 0.978 at 1,000 URLs to 0.996 on the full set, and results became more consistent as the data grew. ANOVA and post-hoc tests showed the gains level off: models trained on 100,000 URLs or more were not significantly different from each other, which points to a saturation point where more data adds little.</p>
+        <div class="tag-row"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">BERT</span><span class="tag">ANOVA</span></div>
       </div>
     </article>
 
@@ -111,7 +132,6 @@
         <div class="entry-org">SEFCOM Lab · Arizona State University</div>
         <p>Analyzed scam and phishing e-commerce sites with Python to identify malicious patterns and indicators of compromise, and used Telegram to map the scam-as-a-service ecosystem. Built data-extraction and preprocessing scripts, and presented findings at the lab's poster session.</p>
         <div class="tag-row"><span class="tag">Python</span><span class="tag">Telegram API</span><span class="tag">Threat intelligence</span></div>
-        <div class="link-row"><a href="https://github.com/kanav-agarwal/telegram-channel-finder" target="_blank" rel="noopener">Code on GitHub ↗</a></div>
       </div>
     </article>
 
@@ -125,7 +145,6 @@
       <div class="f-about">
         <div class="f-name">Kanav Agarwal</div>
         <p>Computer Science at the University of Illinois Urbana-Champaign. Research in AI, machine learning, and cybersecurity.</p>
-        <span class="status"><span class="pulse" aria-hidden="true"></span>Open to software engineering internships</span>
       </div>
       <div class="f-col">
         <h4>Pages</h4>

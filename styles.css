@@ -304,30 +304,6 @@ main {
   .hero .window { max-width: 250px; }
 }
 
-.status {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-family: var(--font-display);
-  font-size: .8rem;
-  color: var(--text);
-  border: 1px solid var(--line-bright);
-  padding: 6px 12px;
-  margin-bottom: 22px;
-  background: var(--bg-raised);
-}
-.status .pulse {
-  width: 8px; height: 8px; border-radius: 50%;
-  background: var(--green);
-  box-shadow: 0 0 0 0 rgba(74,222,128,.6);
-  animation: pulse 2s ease-out infinite;
-}
-@keyframes pulse {
-  0%   { box-shadow: 0 0 0 0 rgba(74,222,128,.55); }
-  70%  { box-shadow: 0 0 0 9px rgba(74,222,128,0); }
-  100% { box-shadow: 0 0 0 0 rgba(74,222,128,0); }
-}
-
 .hero-name {
   font-size: clamp(2.8rem, 6.4vw, 5rem);
   line-height: 1;
@@ -551,14 +527,48 @@ main {
 .entry .tag-row { margin-top: 14px; }
 .entry .link-row { margin-top: 14px; }
 
-.subprojects {
+/* projects under a program: a branch line hanging off the parent card,
+   one smaller node per project, stacked vertically */
+.sub-timeline {
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 14px;
-  margin-top: 18px;
+  margin-left: 24px;
+  padding-top: 14px;
+  padding-left: 30px;
 }
+.sub-timeline::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 28px;
+  width: 1px;
+  background: var(--line-bright);
+}
+.sub-entry { position: relative; }
+.sub-entry::before {                       /* connector from branch to card */
+  content: "";
+  position: absolute;
+  left: -30px; top: 27px;
+  width: 30px; height: 1px;
+  background: var(--line-bright);
+}
+.sub-entry::after {                        /* node on the branch line */
+  content: "";
+  position: absolute;
+  left: -34px; top: 23px;
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid var(--green-dim);
+}
+.sub-entry:hover::after { border-color: var(--green); }
+@media (max-width: 560px) {
+  .sub-timeline { margin-left: 12px; padding-left: 22px; }
+  .sub-entry::before { left: -22px; width: 22px; }
+  .sub-entry::after { left: -26px; }
+}
+
 .subproject {
-  background: var(--bg-inset);
   padding: 18px;
   display: flex;
   flex-direction: column;
@@ -776,7 +786,6 @@ form.msg textarea { min-height: 150px; resize: vertical; }
 @media (max-width: 760px) { .footer-grid { grid-template-columns: 1fr 1fr; } .footer-grid .f-about { grid-column: 1 / -1; } }
 .f-about .f-name { font-family: var(--font-display); font-weight: 800; color: var(--green-bright); font-size: 1.1rem; margin-bottom: 8px; }
 .f-about p { color: var(--text-dim); font-size: .9rem; max-width: 42ch; }
-.f-about .status { margin: 4px 0 0; }
 .f-col h4 { font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; color: var(--green-dim); margin-bottom: 14px; font-weight: 600; }
 .f-col ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; font-family: var(--font-display); font-size: .88rem; }
 .f-col a { color: var(--text-dim); text-decoration: none; }
