@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact · Kanav Agarwal</title>
+<meta name="description" content="Kanav Agarwal — Computer Science at UIUC. Research in AI, machine learning, and cybersecurity.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+<canvas id="bg-grid" aria-hidden="true"></canvas>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="index.html" aria-label="Kanav Agarwal, home"><span class="prompt">~/</span>kanav_agarwal<span class="cursor" aria-hidden="true"></span></a>
+    <nav class="mainnav" aria-label="Main">
+      <a href="research.html">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="education.html">Education</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <a class="nav-resume" href="resume.pdf" target="_blank" rel="noopener">Resume ↗</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<div class="contact-layout">
+  <div>
+    <div class="eyebrow">Contact</div>
+    <h1>Contact</h1>
+    <p class="dim">I'm looking for software engineering internships. Email is the fastest way to reach me.</p>
+    <ul class="contact-list">
+      <li class="card"><div><span class="label">Email</span><a class="value" href="mailto:kanava3@illinois.edu">kanava3@illinois.edu</a></div><button class="copy-btn" type="button" data-copy="kanava3@illinois.edu">Copy</button></li>
+      <li class="card"><div><span class="label">LinkedIn</span><a class="value" href="https://www.linkedin.com/in/kanav-agarwal/" target="_blank" rel="noopener">linkedin.com/in/kanav-agarwal</a></div></li>
+      <li class="card"><div><span class="label">GitHub</span><a class="value" href="https://github.com/kanav-agarwal" target="_blank" rel="noopener">github.com/kanav-agarwal</a></div></li>
+      <li class="card"><div><span class="label">Resume</span><a class="value" href="resume.pdf" target="_blank" rel="noopener">resume.pdf ↗</a></div></li>
+      <li class="card"><div><span class="label">Based in</span><span class="value">Urbana-Champaign, IL</span></div></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Send a message</h2>
+    <form class="msg" data-to="kanava3@illinois.edu">
+      <div><label for="msg-name">Name</label><input id="msg-name" name="name" type="text" autocomplete="name" required></div>
+      <div><label for="msg-email">Your email</label><input id="msg-email" name="email" type="email" autocomplete="email" required></div>
+      <div><label for="msg-message">Message</label><textarea id="msg-message" name="message" required></textarea></div>
+      <div>
+        <button class="btn solid" type="submit"><span class="br l">[</span>Send message<span class="br r">]</span></button>
+        <p class="form-note" aria-live="polite"></p>
+      </div>
+    </form>
+  </div>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="f-about">
+        <div class="f-name">Kanav Agarwal</div>
+        <p>Computer Science at the University of Illinois Urbana-Champaign. Research in AI, machine learning, and cybersecurity.</p>
+        <span class="status"><span class="pulse" aria-hidden="true"></span>Open to software engineering internships</span>
+      </div>
+      <div class="f-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Elsewhere</h4>
+        <ul>
+          <li><a href="mailto:kanava3@illinois.edu">Email</a></li>
+          <li><a href="https://github.com/kanav-agarwal" target="_blank" rel="noopener">GitHub ↗</a></li>
+          <li><a href="https://www.linkedin.com/in/kanav-agarwal/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+          <li><a href="resume.pdf" target="_blank" rel="noopener">Resume (PDF) ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Kanav Agarwal · Urbana-Champaign, IL</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
