@@ -49,7 +49,6 @@
       <div class="eyebrow">Presented at</div>
       <ul class="topic-list">
         <li>Arizona Science &amp; Engineering Fair (2026)</li>
-        <li>GCU Undergraduate Research Symposium (2026)</li>
         <li>ASU SEFCOM poster session (2025)</li>
       </ul>
     </div>
@@ -70,11 +69,11 @@
       <div class="sub-timeline">
         <div class="sub-entry">
           <div class="card subproject">
-            <span class="kind">SCENE · LLMs</span>
-            <h3>LLM hallucination detection</h3>
-            <p>Flags hallucinations by tracking shifts in a model's token-probability distributions during generation. Evaluated on SQuAD v2 and self-generated prompts.</p>
-            <div class="tag-row"><span class="tag">Python</span><span class="tag">NLP</span></div>
-            <div class="link-row"><a href="https://github.com/kanav-agarwal/CPD_hallucination_detection" target="_blank" rel="noopener">Code on GitHub ↗</a></div>
+            <span class="kind">SCENE · Web platform</span>
+            <h3>CausalBench frontend</h3>
+            <p>Built the frontend of CausalBench, an open platform for benchmarking causal-learning datasets, models, and metrics.</p>
+            <div class="tag-row"><span class="tag">Frontend</span><span class="tag">Web development</span></div>
+            <div class="link-row"><a href="https://causalbench.org/home" target="_blank" rel="noopener">causalbench.org ↗</a></div>
           </div>
         </div>
         <div class="sub-entry">
@@ -88,11 +87,11 @@
         </div>
         <div class="sub-entry">
           <div class="card subproject">
-            <span class="kind">SCENE · Web platform</span>
-            <h3>CausalBench frontend</h3>
-            <p>Built the frontend of CausalBench, an open platform for benchmarking causal-learning datasets, models, and metrics.</p>
-            <div class="tag-row"><span class="tag">Frontend</span><span class="tag">Web development</span></div>
-            <div class="link-row"><a href="https://causalbench.org/home" target="_blank" rel="noopener">causalbench.org ↗</a></div>
+            <span class="kind">SCENE · LLMs</span>
+            <h3>LLM hallucination detection</h3>
+            <p>Flags hallucinations by tracking shifts in a model's token-probability distributions during generation. Evaluated on SQuAD v2 and self-generated prompts.</p>
+            <div class="tag-row"><span class="tag">Python</span><span class="tag">NLP</span></div>
+            <div class="link-row"><a href="https://github.com/kanav-agarwal/CPD_hallucination_detection" target="_blank" rel="noopener">Code on GitHub ↗</a></div>
           </div>
         </div>
       </div>
@@ -106,9 +105,9 @@
         </div>
         <div class="entry-org">AP Research (AP Capstone) · University High School</div>
         <h3>Enhancing Phishing Website Detection with Machine Learning</h3>
-        <p>Looked for the training-set sizes that give the most accurate predictions of whether a URL is phishing. Tokenized over 400,000 URLs from the Mendeley dataset and trained logistic regression classifiers on datasets of different sizes, with five trials per size. Models trained on larger datasets performed better.</p>
+        <p>Studied how the size of the training set affects machine learning classifiers that detect phishing URLs. Converted about 450,000 labeled URLs from the Mendeley dataset into BERT embeddings, then trained logistic regression models on samples ranging from 1,000 URLs to the full dataset, with five random seeds per size.</p>
+        <p>F1 rose from 0.978 at 1,000 URLs to 0.996 on the full set, and results became more consistent as the data grew. ANOVA and post-hoc tests showed the gains level off: models trained on 100,000 URLs or more were not significantly different from each other, which points to a saturation point where more data adds little.</p>
         <div class="tag-row"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">BERT</span><span class="tag">ANOVA</span></div>
-        <div class="link-row"><a href="papers/phishing-detection-ml.pdf" target="_blank" rel="noopener">Read the paper (PDF) ↗</a></div>
       </div>
     </article>
 

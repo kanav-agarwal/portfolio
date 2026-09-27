@@ -533,7 +533,7 @@ main {
   position: relative;
   display: grid;
   gap: 14px;
-  margin-left: 48px;
+  margin-left: 24px;
   padding-top: 14px;
   padding-left: 30px;
 }
@@ -563,16 +563,13 @@ main {
 }
 .sub-entry:hover::after { border-color: var(--green); }
 @media (max-width: 560px) {
-  .sub-timeline { margin-left: 24px; padding-left: 22px; }
+  .sub-timeline { margin-left: 12px; padding-left: 22px; }
   .sub-entry::before { left: -22px; width: 22px; }
   .sub-entry::after { left: -26px; }
 }
 
 .subproject {
   padding: 18px;
-  background: var(--bg-inset);            /* recessed, with a dashed edge, */
-  border-style: dashed;                   /* so they read as part of SCENE */
-  border-left: 2px solid var(--green-dim);
   display: flex;
   flex-direction: column;
   gap: 10px;
